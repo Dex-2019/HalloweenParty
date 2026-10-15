@@ -263,6 +263,14 @@ ul,ol{padding:0;list-style:none}
 .btn--line:hover{background:rgba(21,10,43,.08)}
 .pass-reset{display:block;margin:18px auto 0;background:none;border:0;color:var(--noche);opacity:.7;text-decoration:underline;font:500 .92rem var(--body);cursor:pointer}
 
+/* ---------- Aviso de transporte ---------- */
+.uber{background:linear-gradient(100deg,var(--mar) 0%,#16a3e6 60%,#0f8bd0 100%);color:var(--noche);padding:34px 0}
+.uber-in{display:flex;flex-wrap:wrap;align-items:center;gap:18px 26px}
+.uber-ico{width:60px;height:60px;flex:none;fill:none;stroke:var(--noche);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.uber-txt{flex:1 1 280px}
+.uber-t{font-family:var(--display);font-weight:400;font-size:clamp(1.9rem,5vw,2.5rem);line-height:1;letter-spacing:.02em}
+.uber-txt p{margin-top:6px;font-weight:600;max-width:54ch}
+
 /* ---------- FAQ ---------- */
 .faq{margin-top:36px;max-width:780px}
 .faq details{border-bottom:1px solid rgba(255,243,223,.2)}
@@ -314,7 +322,7 @@ ul,ol{padding:0;list-style:none}
     <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
     <symbol id="i-cocktail" viewBox="0 0 24 24"><path d="M4 4h16l-8 9z"/><path d="M12 13v7M8 20h8"/></symbol>
     <symbol id="i-bottle" viewBox="0 0 24 24"><path d="M10 3h4v4l2 3v10a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V10l2-3z"/><path d="M8 14h8"/></symbol>
-    <symbol id="i-food" viewBox="0 0 24 24"><path d="M6 3v8a2 2 0 0 0 2 2v8M10 3v8M6 7h4M17 3c-2 2-3 5-3 8h3v10"/></symbol>
+    <symbol id="i-car" viewBox="0 0 24 24"><path d="M5 16v-5l2-5h10l2 5v5M3 16h18M7 16v2.5M17 16v2.5M5 11h14"/><circle cx="8" cy="13.6" r=".9"/><circle cx="16" cy="13.6" r=".9"/></symbol>
     <symbol id="i-glass" viewBox="0 0 24 24"><path d="M6 4h12l-1.5 16h-9z"/><path d="M7 9h10"/></symbol>
     <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.8 2.8L16 9.5"/></symbol>
   </defs>
@@ -351,7 +359,7 @@ ul,ol{padding:0;list-style:none}
     <div class="hero-grid">
     <div class="hero-copy">
       <p class="subtitle">Halloween VIP en San José Beach Resort, Trujillo</p>
-      <p class="tagline">Ven como quieras ser.</p>
+      <p class="tagline">Ven como quieras ser. El disfraz es opcional: si no te disfrazas, ven vestido de blanco.</p>
       <span class="badge-free">Entrada gratis con registro</span>
       <ul class="facts">
         <li><svg class="ico" aria-hidden="true"><use href="#i-cal"/></svg>Sábado 31 de octubre</li>
@@ -394,11 +402,11 @@ ul,ol{padding:0;list-style:none}
 <section class="sec" id="evento" aria-labelledby="t-evento">
   <div class="wrap">
     <h2 class="h2" id="t-evento">Entrada gratis. Lugares limitados.</h2>
-    <p class="lead">No hay cover. Te registras, recibes tu pase con código QR y entras con tu disfraz. Cuidamos el cupo para que la noche se sienta VIP. La inscripción es personal: no se permiten acompañantes y solo entran las personas inscritas.</p>
+    <p class="lead">No hay cover. Te registras, recibes tu pase con código QR y entras disfrazado o vestido de blanco. Cuidamos el cupo para que la noche se sienta VIP. La inscripción es personal: no se permiten acompañantes y solo entran las personas inscritas.</p>
     <ol class="pasos">
       <li class="paso"><span class="paso-n" aria-hidden="true">1</span><h3>Regístrate</h3><p>Escribe tu nombre y tu WhatsApp. Toma un minuto.</p></li>
       <li class="paso"><span class="paso-n" aria-hidden="true">2</span><h3>Recibe tu pase</h3><p>Al terminar verás tu pase con código QR. Guárdalo en tu celular.</p></li>
-      <li class="paso"><span class="paso-n" aria-hidden="true">3</span><h3>Llega con tu disfraz</h3><p>Muestra tu QR en la entrada desde las 5:00 PM y disfruta el atardecer.</p></li>
+      <li class="paso"><span class="paso-n" aria-hidden="true">3</span><h3>Llega disfrazado o de blanco</h3><p>Muestra tu QR en la entrada desde las 5:00 PM y disfruta el atardecer.</p></li>
     </ol>
   </div>
 </section>
@@ -423,7 +431,7 @@ ul,ol{padding:0;list-style:none}
 <section class="sec sec--menu" id="menu" aria-labelledby="t-menu">
   <div class="wrap">
     <h2 class="h2" id="t-menu">El Caldero de la Bruja</h2>
-    <p class="lead">Brebajes para brindar y platillos para sobrevivir la noche, de las 5:00 PM a las 2:00 AM.</p>
+    <p class="lead">Brebajes para brindar toda la noche, de las 5:00 PM a las 2:00 AM.</p>
     <div class="tabs" id="menuTabs" role="tablist" aria-label="Categorías del menú"></div>
     <ul class="menu-list" id="menuPanel" role="tabpanel" tabindex="0"></ul>
     <p class="menu-nota">Menú sujeto a disponibilidad. Consume con responsabilidad.</p>
@@ -476,6 +484,18 @@ ul,ol{padding:0;list-style:none}
   </div>
 </section>
 
+<!-- Transporte -->
+<aside class="uber" id="transporte" aria-labelledby="t-uber">
+  <div class="wrap uber-in">
+    <svg class="uber-ico" aria-hidden="true"><use href="#i-car"/></svg>
+    <div class="uber-txt">
+      <h2 class="uber-t" id="t-uber">¿Necesitas transporte?</h2>
+      <p>Pide tu Uber VIP por WhatsApp: transporte adicional o privado para llegar y volver a casa con tranquilidad.</p>
+    </div>
+    <a class="btn btn--dark" data-uber href="#" target="_blank" rel="noopener">Pedir Uber VIP por WhatsApp</a>
+  </div>
+</aside>
+
 <!-- Registro -->
 <section class="sec sec--registro" id="registro" aria-labelledby="t-registro">
   <div class="wrap reg">
@@ -515,7 +535,7 @@ ul,ol{padding:0;list-style:none}
           </div>
           <div class="campo" id="c-disfraz">
             <label class="lbl" for="disfraz">¿De qué te vas a disfrazar? <span class="opc">(opcional)</span></label>
-            <input type="text" id="disfraz" name="disfraz" maxlength="80" placeholder="Vampiro, payaso, superhéroe...">
+            <input type="text" id="disfraz" name="disfraz" maxlength="80" placeholder="Vampiro, payaso, de blanco...">
           </div>
           <label class="check"><input type="checkbox" id="champa" name="champa"><span>Quiero información para reservar una champa VIP.</span></label>
           <div class="campo" id="c-edad" style="margin-top:0">
@@ -536,9 +556,10 @@ ul,ol{padding:0;list-style:none}
           <p class="pass-meta" id="passMeta">Sábado 31 de octubre, desde las 5:00&nbsp;PM<br>San José Beach Resort, Trujillo</p>
           <div class="pass-qr" id="passQr" hidden></div>
           <p class="pass-code" id="passCode"></p>
-          <p class="pass-note" id="passNote">Toma una captura de pantalla de este pase y preséntala en la entrada, con tu disfraz. Es personal.</p>
+          <p class="pass-note" id="passNote">Toma una captura de pantalla de este pase y preséntala en la entrada, con tu disfraz o vestido de blanco. Es personal.</p>
           <div class="pass-actions">
             <button class="btn btn--line btn--small" type="button" id="btnIcs">Agregar al calendario</button>
+            <a class="btn btn--line btn--small" data-uber href="#" target="_blank" rel="noopener">Pedir Uber VIP</a>
             <a class="btn btn--line btn--small" id="btnWa" href="#" target="_blank" rel="noopener" hidden>Enviar por WhatsApp</a>
           </div>
           <button class="pass-reset" type="button" id="btnReset">Registrar a otra persona</button>
@@ -553,11 +574,12 @@ ul,ol{padding:0;list-style:none}
   <div class="wrap">
     <h2 class="h2" id="t-faq">Preguntas frecuentes</h2>
     <div class="faq">
-      <details><summary>¿Tiene costo entrar?</summary><p>No. La entrada es gratis para quienes se registran. La comida y las bebidas se pagan en el evento.</p></details>
-      <details><summary>¿Tengo que ir disfrazado?</summary><p>Sí, es una fiesta de disfraces. No hay temática: ven de lo que quieras, ya sea vampiro, payaso, superhéroe, personaje de película o una idea tuya.</p></details>
+      <details><summary>¿Tiene costo entrar?</summary><p>No. La entrada es gratis para quienes se registran. Las bebidas se pagan en el evento.</p></details>
+      <details><summary>¿Tengo que ir disfrazado?</summary><p>No es obligatorio, pero es lo más divertido. Si no te disfrazas, ven vestido de blanco. No hay temática: ven de lo que quieras, ya sea vampiro, payaso, superhéroe, personaje de película o una idea tuya.</p></details>
       <details><summary>¿Quién puede entrar?</summary><p>Solo personas de 18 años o más que se hayan inscrito. La inscripción es personal y no se permiten acompañantes: cada invitado debe registrarse por su cuenta. Lleva tu código QR en el celular y un documento de identidad.</p></details>
       <details><summary>¿Qué pasa si llueve?</summary><p>Si el clima cambia, te avisamos por WhatsApp y en nuestras redes cómo sigue la fiesta.</p></details>
       <details><summary>¿Puedo reservar una champa VIP o quedarme a dormir?</summary><p>Marca la opción de champa VIP en el formulario o escríbenos por WhatsApp y te confirmamos la disponibilidad.</p></details>
+      <details><summary>¿Hay transporte para llegar o regresar?</summary><p>Sí. Puedes pedir un Uber VIP, transporte adicional o privado, con el botón de transporte de esta página: te atienden por WhatsApp. Si vas a tomar, no manejes.</p></details>
     </div>
   </div>
 </section>
@@ -568,7 +590,7 @@ ul,ol{padding:0;list-style:none}
     <div class="logo" role="img" aria-label="Logo San José Beach Resort"></div>
     <p>San José Beach Resort, Trujillo, Colón, Honduras</p>
     <div class="foot-links" id="footLinks"></div>
-    <p class="foot-legal">Evento para mayores de 18 años. Si vas a tomar, no manejes. Pregunta por habitaciones o transporte seguro.</p>
+    <p class="foot-legal">Evento para mayores de 18 años. Si vas a tomar, no manejes: pide tu Uber VIP.</p>
   </div>
 </footer>
 
@@ -596,10 +618,11 @@ const CONFIG = {
   whatsapp: '',                   // con código de país, sin + ni espacios. Ej: '50499999999'
   facebook: '',                   // URL completa, opcional
   instagram: '',                  // URL completa, opcional
+  uberWhatsapp: '50493659493',    // WhatsApp de Uber VIP (código de país 504 + número, sin + ni guiones)
   mapaBusqueda: 'San José Beach Resort Trujillo Honduras',
   firebase: {                     // pega aquí la config de tu app web de Firebase
-    apiKey: "AIzaSyAPXNP6H0otRa_MFd6pjexdCFCqypzAi08",
-     authDomain: "halloween-party-d708b.firebaseapp.com",
+   apiKey: "AIzaSyAPXNP6H0otRa_MFd6pjexdCFCqypzAi08",
+  authDomain: "halloween-party-d708b.firebaseapp.com",
   projectId: "halloween-party-d708b",
   storageBucket: "halloween-party-d708b.firebasestorage.app",
   messagingSenderId: "1043390717820",
@@ -608,17 +631,17 @@ const CONFIG = {
   }
 };
 
-const DISFRACES = ['Vampiros','Brujas','Piratas','Zombis','Superhéroes','Payasos','Catrinas','Fantasmas','Personajes de película','Tu propia idea'];
+const DISFRACES = ['Todo de blanco','Vampiros','Brujas','Piratas','Zombis','Superhéroes','Payasos','Catrinas','Fantasmas','Personajes de película','Tu propia idea'];
 
 const PROGRAMA = [
-  { hora:'5:00 PM',  titulo:'Sunset party',          texto:'Llegas con tu disfraz, te tomas fotos en el muelle con la luz del atardecer y arranca la hora feliz.' },
+  { hora:'5:00 PM',  titulo:'Sunset party',          texto:'Llegas disfrazado o de blanco, te tomas fotos en el muelle con la luz del atardecer y arranca la hora feliz.' },
   { hora:'6:30 PM',  titulo:'Cae la noche',          texto:'Se encienden las luces y las antorchas y la fiesta cambia de ritmo.' },
   { hora:'8:00 PM',  titulo:'Show en vivo',          texto:'Performers y música en vivo para calentar la noche.' },
   { hora:'9:30 PM',  titulo:'DJ en la playa',        texto:'Sube el ritmo y se llena la pista frente al mar.' },
   { hora:'11:00 PM', titulo:'Concurso de disfraces', texto:'Los mejores disfraces suben a la tarima y ganan premios en consumo.' },
   { hora:'12:00 AM', titulo:'Medianoche embrujada',  texto:'Show especial de medianoche.' },
   { hora:'12:30 AM', titulo:'DJ set cerrado',        texto:'La última tanda de música de la noche.' },
-  { hora:'2:00 AM',  titulo:'Cierre',                texto:'Salida ordenada. Pregunta por habitaciones o transporte seguro.' }
+  { hora:'2:00 AM',  titulo:'Cierre',                texto:'Salida ordenada. Pide tu Uber VIP si necesitas transporte.' }
 ];
 
 /* Menú: sin precios. Edita, agrega o quita platos aquí */
@@ -630,15 +653,6 @@ const MENU = [
     { n:'Michelada' },
     { n:'Cervezas nacionales e internacionales' },
     { n:'Vinos' }
-  ]},
-  { nombre:'Festín de Ultratumba', icono:'i-food', items:[
-    { n:'Alitas' },
-    { n:'Hamburguesas' },
-    { n:'Carnes asadas' },
-    { n:'Deditos de pollo' },
-    { n:'Bocadillos' },
-    { n:'Camarones' },
-    { n:'Pescado frito' }
   ]}
 ];
 
@@ -652,6 +666,7 @@ const qsa = (s, c = document) => [...c.querySelectorAll(s)];
 const esc = s => String(s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 const params = new URLSearchParams(location.search);
 const DEMO = params.get('demo') === '1';
+const DEBUG = params.get('debug') === '1';
 const STORE_KEY = 'sjbr_halloween_pase';
 const fbOk = () => !!(CONFIG.firebase.apiKey && CONFIG.firebase.projectId);
 
@@ -702,6 +717,7 @@ function showCat(i) {
   panelEl.innerHTML = MENU[i].items.map(it =>
     `<li><svg aria-hidden="true"><use href="#mini-calabaza"/></svg><div><span class="m-name">${esc(it.n)}</span>${it.d ? `<p class="m-desc">${esc(it.d)}</p>` : ''}</div></li>`).join('');
 }
+if (MENU.length < 2) { tabsEl.hidden = true; panelEl.removeAttribute('role'); panelEl.removeAttribute('tabindex'); panelEl.setAttribute('aria-label', 'Bebidas'); }
 showCat(0);
 
 /* ----- Navegación y barra fija ----- */
@@ -738,6 +754,11 @@ tick(); setInterval(tick, 1000);
 
 /* ----- Enlaces del pie y mapa ----- */
 const waLink = txt => `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(txt)}`;
+function uberUrl() {
+  return 'https://wa.me/' + CONFIG.uberWhatsapp + '?text=' +
+    encodeURIComponent('Hola, quiero información del Uber VIP para la Halloween Party en San José Beach Resort (31 de octubre).');
+}
+qsa('[data-uber]').forEach(a => { a.href = uberUrl(); });
 qs('#mapLink').href = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(CONFIG.mapaBusqueda);
 (() => {
   const L = [];
@@ -842,13 +863,21 @@ function validate(d) {
   return ok ? tel : null;
 }
 
+/* Marcador por teléfono (sin datos personales): permite distinguir "ya inscrito" de un error de permisos */
+async function yaInscrito(tel) {
+  try {
+    const { db, fs } = await loadFirebase();
+    return (await fs.getDoc(fs.doc(db, 'telefonos', 'tel_' + tel))).exists();
+  } catch (_) { return false; }
+}
+
 /* Cada inscripción llega por correo a CONFIG.correoAviso (servicio FormSubmit, sin servidor propio) */
-async function enviarCorreo(d, codigo, espera) {
+async function enviarCorreo(d, codigo, espera, guardado = true) {
   const res = await fetch('https://formsubmit.co/ajax/' + encodeURIComponent(CONFIG.correoAviso), {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
     body: JSON.stringify({
-      _subject: (espera ? 'Lista de espera: ' : 'Nueva inscripción: ') + d.nombre + ' (Halloween Party VIP)',
+      _subject: (guardado ? '' : '[SIN GUARDAR EN FIREBASE] ') + (espera ? 'Lista de espera: ' : 'Nueva inscripción: ') + d.nombre + ' (Halloween Party VIP)',
       _template: 'table',
       _captcha: 'false',
       'Nombre': d.nombre,
@@ -858,6 +887,7 @@ async function enviarCorreo(d, codigo, espera) {
       'Quiere champa VIP': d.champa ? 'Sí' : 'No',
       'Lista de espera': espera ? 'Sí' : 'No',
       'Código del pase': codigo,
+      'Aviso': guardado ? 'Inscripción guardada correctamente' : 'Firebase rechazó el guardado (revisar reglas de Firestore). Este correo es el único registro.',
       'Registrado el': new Date().toLocaleString('es-HN', { timeZone: 'America/Tegucigalpa' })
     })
   });
@@ -875,6 +905,7 @@ form.addEventListener('submit', async e => {
   const espera = waitlist();
   const codigo = makeCode();
   btn.disabled = true; const label = btn.textContent; btn.textContent = 'Registrando...';
+  let guardado = true, lastErr = '';
   try {
     if (DEMO) {
       await new Promise(r => setTimeout(r, 700));
@@ -882,43 +913,61 @@ form.addEventListener('submit', async e => {
       const usaFb = fbOk(), usaCorreo = !!CONFIG.correoAviso;
       if (!usaFb && !usaCorreo) { const x = new Error('sin-config'); x.code = 'sin-config'; throw x; }
       if (usaFb) {
-        const { db, fs } = await loadFirebase();
-        const batch = fs.writeBatch(db);
-        batch.set(fs.doc(db, 'registros', 'tel_' + tel), {
-          nombre: d.nombre, telefono: d.telRaw, correo: d.correo,
-          disfraz: d.disfraz, champaVip: d.champa, mayorEdad: true, listaEspera: espera,
-          codigo, creado: fs.serverTimestamp()
-        });
-        batch.set(fs.doc(db, 'meta', 'contador'), { total: fs.increment(1) }, { merge: true });
-        await batch.commit();
+        try {
+          const { db, fs } = await loadFirebase();
+          const batch = fs.writeBatch(db);
+          const creado = fs.serverTimestamp();
+          batch.set(fs.doc(db, 'registros', 'tel_' + tel), {
+            nombre: d.nombre, telefono: d.telRaw, correo: d.correo,
+            disfraz: d.disfraz, champaVip: d.champa, mayorEdad: true, listaEspera: espera,
+            codigo, creado
+          });
+          batch.set(fs.doc(db, 'telefonos', 'tel_' + tel), { creado });
+          batch.set(fs.doc(db, 'meta', 'contador'), { total: fs.increment(1) }, { merge: true });
+          await batch.commit();
+        } catch (fbErr) {
+          if (!fbErr || fbErr.code !== 'permission-denied') throw fbErr;
+          if (await yaInscrito(tel)) { const x = new Error('duplicado'); x.code = 'duplicado'; throw x; }
+          // Firebase rechazó por permisos: las reglas publicadas no son las del final de este archivo.
+          console.error('Firestore rechazó el registro por permisos. Publica las reglas que están al final de este archivo.', fbErr);
+          guardado = false;   // la inscripción sigue por correo para no perder al invitado
+        }
       }
       if (usaCorreo) {
-        try { await enviarCorreo(d, codigo, espera); }
+        try { await enviarCorreo(d, codigo, espera, guardado); }
         catch (mailErr) {
           console.error('No se pudo enviar el aviso por correo:', mailErr);
-          if (!usaFb) { mailErr.code = 'correo'; throw mailErr; }   // sin Firebase, el correo es el único registro
+          if (!usaFb || !guardado) { mailErr.code = 'correo'; throw mailErr; }   // si no quedó guardado en ningún lado, es un error
         }
+      } else if (!guardado) {
+        const x = new Error('permisos'); x.code = 'permisos'; throw x;
       }
     }
     const pase = { nombre: d.nombre, codigo, espera };
     try { localStorage.setItem(STORE_KEY, JSON.stringify(pase)); } catch (_) {}
     showPass(pase);
-    if (state.total !== null) renderCupos(state.total + 1); else if (DEMO) renderCupos(Math.round(CONFIG.cupoTotal * 0.78) + 1);
+    if (!guardado) refreshCupos();
+    else if (state.total !== null) renderCupos(state.total + 1);
+    else if (DEMO) renderCupos(Math.round(CONFIG.cupoTotal * 0.78) + 1);
     else refreshCupos();
   } catch (err) {
     console.error('Error al registrar:', err);
+    lastErr = (err && (err.code || '')) + ' ' + (err && err.message || '');
     const wa = CONFIG.whatsapp ? ' Escríbenos por WhatsApp y lo resolvemos.' : '';
     if (err && err.code === 'sin-config') {
       console.error('Falta configurar CONFIG.firebase o CONFIG.correoAviso (ver instrucciones al final del archivo).');
       showFormError('El registro todavía no está disponible. Vuelve a intentarlo en unos minutos.' + wa);
     } else if (err && err.code === 'correo') {
       showFormError('No pudimos enviar tu inscripción. Inténtalo de nuevo en unos minutos.' + wa);
-    } else if (err && err.code === 'permission-denied') {
-      showFormError('No pudimos completar tu registro. Si ya te registraste con este número, tu lugar ya está reservado.' + wa);
+    } else if (err && err.code === 'duplicado') {
+      showFormError('Este número ya está inscrito. La inscripción es única y tu lugar ya está reservado.' + wa);
+    } else if (err && err.code === 'permisos') {
+      showFormError('No pudimos completar tu inscripción por un problema técnico. Inténtalo más tarde.' + wa);
     } else {
       showFormError('No pudimos conectar con el servidor. Revisa tu internet e inténtalo de nuevo.' + wa);
     }
   } finally {
+    if (DEBUG && !errBox.hidden) errBox.textContent += ' [debug: ' + (lastErr || '') + ']';
     btn.disabled = false; btn.textContent = label; syncFormMode();
   }
 });
@@ -943,7 +992,7 @@ function showPass(p, scroll = true) {
   qs('#passOk').textContent = p.espera ? 'Estás en la lista de espera' : 'Listo, tu lugar está reservado';
   qs('#passNote').textContent = p.espera
     ? 'Si se libera un lugar te avisamos por WhatsApp. Guarda este código.'
-    : 'Toma una captura de pantalla de este pase y preséntala en la entrada, con tu disfraz.';
+    : 'Toma una captura de pantalla de este pase y preséntala en la entrada, con tu disfraz o vestido de blanco.';
   const wa = qs('#btnWa');
   if (CONFIG.whatsapp) { wa.hidden = false; wa.href = waLink(`Hola, me registré para la Halloween Party. Mi código es ${p.codigo}.`); }
   const box = qs('#passQr'); box.hidden = true; box.innerHTML = '';
@@ -993,16 +1042,28 @@ refreshCupos();
     rules_version = '2';
     service cloud.firestore {
       match /databases/{database}/documents {
+
         match /registros/{id} {
-          allow create: if request.resource.data.keys().hasOnly(['nombre','telefono','correo','disfraz','champaVip','mayorEdad','listaEspera','codigo','creado'])
-            && request.resource.data.nombre is string && request.resource.data.nombre.size() >= 3 && request.resource.data.nombre.size() <= 80
-            && request.resource.data.telefono is string && request.resource.data.telefono.size() >= 7 && request.resource.data.telefono.size() <= 20
-            && request.resource.data.correo is string && request.resource.data.correo.size() <= 80
-            && request.resource.data.disfraz is string && request.resource.data.disfraz.size() <= 80
+          allow create: if request.resource.data.keys().hasAll(['nombre','telefono','mayorEdad','codigo','creado'])
+            && request.resource.data.keys().size() <= 12
+            && request.resource.data.nombre is string
+            && request.resource.data.nombre.size() >= 3 && request.resource.data.nombre.size() <= 80
+            && request.resource.data.telefono is string
+            && request.resource.data.telefono.size() >= 7 && request.resource.data.telefono.size() <= 20
+            && request.resource.data.get('correo', '').size() <= 80
+            && request.resource.data.get('disfraz', '').size() <= 80
             && request.resource.data.mayorEdad == true
             && request.resource.data.creado == request.time;
           allow read, update, delete: if false;
         }
+
+        match /telefonos/{id} {
+          allow get: if true;
+          allow create: if request.resource.data.keys().hasOnly(['creado'])
+            && request.resource.data.creado == request.time;
+          allow list, update, delete: if false;
+        }
+
         match /meta/contador {
           allow read: if true;
           allow create: if request.resource.data.total == 1;
@@ -1013,6 +1074,8 @@ refreshCupos();
 
     Estas reglas hacen que cualquiera pueda registrarse (una sola vez por número de teléfono)
     pero nadie pueda leer la lista desde el navegador. Tú ves los registros en la consola de Firebase.
+    IMPORTANTE: después de pegar las reglas, pulsa PUBLICAR. Si no las publicas, Firebase sigue usando las anteriores.
+    Para ver el error exacto en el celular, abre la página con ?debug=1 al final de la URL.
  5. Sube este archivo como index.html a un repositorio de GitHub y activa GitHub Pages
     (Settings > Pages > Deploy from a branch). En Firebase > Authentication > Settings >
     Authorized domains no necesitas agregar nada, porque no se usa Authentication.
@@ -1030,3 +1093,4 @@ refreshCupos();
 -->
 </body>
 </html>
+
